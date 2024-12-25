@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.contact-list {
+  width: 30%;
+  background-color: white;
+  border-right: 1px solid #d1d7db;
+  overflow-y: auto;
+}
+
+.contact-item {
+  display: flex;
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.contact-item:hover {
+  background-color: #f5f6f6;
+}
+
+.contact-item.selected {
+  background-color: #f0f2f5;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 10px;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d1d7db;
+}
+
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #efeae2;
+}
+
+.message {
+  margin: 8px 0;
+  max-width: 65%;
+}
+
+.message.sent {
+  margin-left: auto;
+}
+
+.message-content {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.message.sent .message-content {
+  background-color: #d9fdd3;
+}
+
+.message-input {
+  padding: 10px;
+  background-color: #f0f2f5;
+  display: flex;
+  gap: 10px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.message-input button {
+  padding: 8px 16px;
+  background-color: #00a884;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.message-input button:hover {
+  background-color: #008c6f;
+}
