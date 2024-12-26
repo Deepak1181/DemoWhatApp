@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 import React, { useContext, useEffect } from 'react';
 import { AppContext } from '../context/AppContext';
 import MessageInput from './MessageInput';
@@ -27,7 +19,7 @@ const ChatWindow = () => {
       };
       loadMessages();
     }
-  }, [state.selectedContact, getMessages, dispatch]);
+  }, [state.selectedContact, getMessages, dispatch]);    
 
   if (!state.selectedContact) {
     return <div className="chat-window empty">Select a contact to start chatting</div>;
